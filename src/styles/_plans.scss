@@ -1,0 +1,49 @@
+.plans{
+    padding: 5.6vw;
+
+    h2{
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        .button{
+            margin-top: 24px;
+        }
+        
+        &__item{
+            text-align: center;
+            padding: 60px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+
+            &:nth-child(2){ //pseudo seletor para selecionar o segundo idem do elemento
+                background-image: url(../images/fundo_combo_plus.png);
+                background-repeat: no-repeat; //para não repetir a imagem dentro do <li>
+                background-size: contain; //para fazer com que a imagem de fundo ocupe todo o tamanho do <li>
+            }
+
+            img{
+                height: 83px
+            };
+
+
+            strong{
+                display: block;
+                margin-top: 24px;
+            }
+        }
+
+    }
+
+    p{
+        text-align: center;
+    }
+}
